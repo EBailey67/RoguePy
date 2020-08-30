@@ -52,9 +52,6 @@
   <ItemGroup>
     <Content Include="arial10x10.png" />
     <Content Include="dejavu10x10_gs_tc.png" />
-    <Content Include="readme.md">
-      <SubType>Code</SubType>
-    </Content>
     <Content Include="requirements.txt">
       <SubType>Code</SubType>
     </Content>
