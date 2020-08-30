@@ -51,7 +51,6 @@ class ConfusionConsumable(Consumable):
             self.engine,
             callback=lambda xy: actions.ItemAction(consumer, self.parent, xy),
         )
-        return None
 
     def activate(self, action: actions.ItemAction) -> None:
         consumer = action.entity
@@ -104,7 +103,6 @@ class FireballDamageConsumable(Consumable):
             radius=self.radius,
             callback=lambda xy: actions.ItemAction(consumer, self.parent, xy),
         )
-        return None
 
     def activate(self, action: actions.ItemAction) -> None:
         target_xy = action.target_xy

@@ -44,6 +44,9 @@
     <Compile Include="components\inventory.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="components\level.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="components\__init__.py">
       <SubType>Code</SubType>
     </Compile>

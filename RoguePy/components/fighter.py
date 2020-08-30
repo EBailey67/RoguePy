@@ -9,6 +9,7 @@ from render_order import RenderOrder
 if TYPE_CHECKING:
     from entity import Actor
 
+
 class Fighter(BaseComponent):
     parent: Actor
 
@@ -31,7 +32,7 @@ class Fighter(BaseComponent):
     def die(self) -> None:
         if self.engine.player is self.parent:
             death_message = "You died!"
-            dealth_message_color = color.player_die
+            death_message_color = color.player_die
         else:
             death_message = f"{self.parent.name} is dead!"
             death_message_color = color.enemy_die
@@ -44,6 +45,8 @@ class Fighter(BaseComponent):
         self.parent.render_order = RenderOrder.CORPSE
 
         self.engine.message_log.add_message(death_message, death_message_color)
+
+        self.engine.player.level.add_xp(self.parent.level.xp_given)
 
     def heal(self, amount: int) -> int:
         if self.hp == self.max_hp:
