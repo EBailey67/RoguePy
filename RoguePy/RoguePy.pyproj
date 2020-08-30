@@ -32,6 +32,9 @@
     <Compile Include="map_objects\game_map.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="map_objects\rectangle.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="map_objects\tile.py">
       <SubType>Code</SubType>
     </Compile>
