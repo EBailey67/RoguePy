@@ -23,12 +23,30 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="engine.py" />
+    <Compile Include="entity.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="input_handlers.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="map_objects\game_map.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="map_objects\tile.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="map_objects\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="render_functions.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="arial10x10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="map_objects\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
