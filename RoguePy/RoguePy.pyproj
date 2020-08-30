@@ -35,7 +35,13 @@
     <Compile Include="components\base_component.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="components\consumable.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="components\fighter.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="components\inventory.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="components\__init__.py">
@@ -46,6 +52,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="entity_factories.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="exceptions.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="game_map.py">
