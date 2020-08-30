@@ -26,6 +26,9 @@
     <Compile Include="actions.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="color.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="components\ai.py">
       <SubType>Code</SubType>
     </Compile>
@@ -54,7 +57,13 @@
     <Compile Include="main.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="message_log.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="procgen.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="render_functions.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="render_order.py">
