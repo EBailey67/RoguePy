@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>0ba38451-76c7-4fd8-839a-a1821667cc9d</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>engine.py</StartupFile>
+    <StartupFile>main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,34 +22,35 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="actions.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="engine.py" />
     <Compile Include="entity.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="game_map.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="input_handlers.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="map_objects\game_map.py">
+    <Compile Include="main.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="map_objects\rectangle.py">
+    <Compile Include="procgen.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="map_objects\tile.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="map_objects\__init__.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="render_functions.py">
+    <Compile Include="tile_types.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="arial10x10.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="map_objects\" />
+    <Content Include="dejavu10x10_gs_tc.png" />
+    <Content Include="requirements.txt">
+      <SubType>Code</SubType>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
