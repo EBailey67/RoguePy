@@ -38,6 +38,12 @@
     <Compile Include="components\consumable.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="components\equipment.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="components\equippable.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="components\fighter.py">
       <SubType>Code</SubType>
     </Compile>
@@ -55,6 +61,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="entity_factories.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="equipment_types.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="exceptions.py">
